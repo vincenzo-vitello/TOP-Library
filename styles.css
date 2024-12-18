@@ -64,6 +64,10 @@ nav:hover::before {
   list-style: none;
   gap: 20px;
 }
+#theme_toggler,
+#filters {
+  width: 1.5rem;
+}
 #add_book_btn {
   width: 50px;
   height: 50px;
