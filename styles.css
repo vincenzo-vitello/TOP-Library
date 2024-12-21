@@ -33,10 +33,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 #overlay {
-  top: -100%;
-  left: -100%;
-  border-bottom-right-radius: 50%;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 #overlay.active {
   width: 100vw;
@@ -85,13 +82,8 @@ nav::before {
 nav:hover::before {
   opacity: 1;
 }
-#filters_container ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-#theme_toggler,
-#filters {
+
+#theme_toggler {
   width: 1.5rem;
   cursor: pointer;
 }
