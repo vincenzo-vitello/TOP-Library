@@ -111,6 +111,7 @@ const renderBooks = () => {
   gridWrapper.innerHTML = "";
   booksArr.forEach((book) => {
     gridWrapper.innerHTML += bookCard(
+      book.id,
       book.title,
       book.author,
       book.pages,

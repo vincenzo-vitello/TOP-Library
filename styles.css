@@ -312,3 +312,11 @@ form button:hover {
     border: 2px solid red;
   }
 }
+@media (max-width: 800px) {
+  #grid_wrapper {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
