@@ -6,8 +6,9 @@
     <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <div id="add_book_btn">+</div>
-  <body data-theme="light">
+
+  <body>
+    <div id="overlay"></div>
     <nav>
       <h1>Library</h1>
       <div id="filters_container">
@@ -16,13 +17,35 @@
             <img src="./assets/light-mode.svg" alt="" id="theme_toggler" />
           </li>
           <li><img src="./assets/filters-light.svg" alt="" id="filters" /></li>
-          <li class="filter_option">Current</li>
           <li class="filter_option">Read</li>
           <li class="filter_option">Not read</li>
         </ul>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <div id="add_book_btn">+</div>
+      <form action="" class="">
+        <label class="form_title" for="form_title">Add book to your list</label>
+        <div>
+          <label for="book_title">Title</label>
+          <input type="text" id="input_book_title" />
+        </div>
+        <div>
+          <label for="book_author">Author</label>
+          <input type="text" id="input_book_author" />
+        </div>
+        <div>
+          <label for="book_pages">Pages</label>
+          <input type="number" id="input_book_pages" />
+        </div>
+        <div>
+          <label class="mark_as_read" for="mark_as_read">Mark as Read</label>
+          <input type="checkbox" id="input_mark_as_read" />
+        </div>
+        <button type="submit" id="submit_new_book">Enter Book</button>
+      </form>
+      <div id="grid_wrapper"></div>
+    </main>
     <footer></footer>
     <script src="app.js"></script>
   </body>
